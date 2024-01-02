@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-starter-home-context',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./starter-home-context.component.scss']
 })
 export class StarterHomeContextComponent {
-
+  title = 'Dashboard | sm-system';
+  date = new Date();
 }

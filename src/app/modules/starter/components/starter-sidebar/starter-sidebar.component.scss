@@ -1,0 +1,22 @@
+.sidebar {
+  left: 0;
+  height: 100%;
+  width: 280px;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  .nav-item{
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    left: -280px;
+    position: fixed;
+  }
+}
+
+.sidebar-open {
+  left: 0;
+}
+

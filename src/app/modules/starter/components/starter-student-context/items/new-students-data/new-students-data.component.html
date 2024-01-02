@@ -1,0 +1,90 @@
+<div class="m-4 grid-margin stretch-card">
+  <div class="card">
+    <ul class="nav nav-pills mt-3 ml-3" style="border: none">
+      <li class="nav-item">
+        <button mat-raised-button routerLink="/starter/manage-students/list">All Students</button>
+      </li>
+      <li class="nav-item">
+        <button mat-raised-button routerLink="/starter/manage-students/new">New Student</button>
+      </li>
+    </ul>
+    <div class="card-body">
+      <h4 class="card-title">Add New Student</h4>
+        <div class="12">
+          <div class="row">
+            <div class="ml-3 mb-3">
+              <mat-card class="example-card">
+                <img mat-card-image src="assets/images/user-placeholder.png" width="110px" alt="Photo of a Shiba Inu">
+                <mat-card-actions>
+                  <button mat-raised-button class="w-100">Upload</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <mat-form-field color="primary" class="w-100">
+                <mat-label>Enter Student Admission Number</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-md-6">
+              <mat-form-field color="primary" class="w-100">
+                <mat-label>Enter Student Name</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-md-6">
+              <mat-form-field color="primary" class="w-100">
+                <mat-label>Enter Contact Number</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-md-6">
+              <mat-form-field color="primary" class="w-100">
+                <mat-label>Enter Email Address</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-md-6">
+              <mat-form-field color="primary" class="w-100">
+                <mat-label>Enter Address</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-md-6">
+              <mat-form-field color="primary" class="w-100">
+                <mat-label>Select Grade</mat-label>
+                <mat-select>
+                  <mat-option value="1">Grade 01</mat-option>
+                  <mat-option value="2">Grade 02</mat-option>
+                  <mat-option value="3">Grade 03</mat-option>
+                  <mat-option value="4">Grade 04</mat-option>
+                  <mat-option value="5">Grade 05</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-md-6">
+              <mat-form-field class="w-100" color="primary">
+                <input matInput [matDatepicker]="picker" placeholder="Choose Date of Birth">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-md-6">
+              <mat-form-field class="w-100" color="primary">
+                <mat-label>Select Status</mat-label>
+                <mat-select>
+                  <mat-option value="active">Active</mat-option>
+                  <mat-option value="pending">Pending</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4 col-lg-2">
+              <button mat-raised-button color="primary" class="w-100">Primary</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

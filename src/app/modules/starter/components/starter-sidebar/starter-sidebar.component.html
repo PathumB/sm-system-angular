@@ -1,0 +1,60 @@
+<nav class="sidebar" [ngClass]="{'sidebar-open': isSidebarOpen}">
+  <ul class="nav">
+    <li class="nav-item" [routerLinkActive]="'active'">
+      <a class="nav-link" routerLink="/starter/home">
+        <i class="material-icons menu-icon">dashboard</i>
+        <span class="menu-title">Dashboard</span>
+        <i class="menu-arrow"></i>
+      </a>
+    </li>
+    <li class="nav-item" [routerLinkActive]="'active'">
+      <a class="nav-link" routerLink="/starter/manage-students">
+        <i class="material-icons menu-icon">school</i>
+        <span class="menu-title">Manage Students</span>
+        <i class="menu-arrow"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/starter/home">
+        <i class="material-icons menu-icon">assignment</i>
+        <span class="menu-title">Manage Grades</span>
+        <i class="menu-arrow"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/starter/home">
+        <i class="material-icons menu-icon">menu_book</i>
+        <span class="menu-title">Manage Subjects</span>
+        <i class="menu-arrow"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/starter/home">
+        <i class="material-icons menu-icon">check_circle</i>
+        <span class="menu-title">Mark Attendance</span>
+        <i class="menu-arrow"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/starter/home">
+        <i class="material-icons menu-icon">event</i>
+        <span class="menu-title">Manage Events</span>
+        <i class="menu-arrow"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/starter/home">
+        <i class="material-icons menu-icon">schedule</i>
+        <span class="menu-title"> Manage Timetable</span>
+        <i class="menu-arrow"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="logout()">
+        <i class="material-icons menu-icon">exit_to_app</i>
+        <span class="menu-title">Logout</span>
+        <i class="menu-arrow"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
