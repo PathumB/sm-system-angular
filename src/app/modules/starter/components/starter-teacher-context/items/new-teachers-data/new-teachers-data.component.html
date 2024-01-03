@@ -1,0 +1,98 @@
+<div class="m-4 grid-margin stretch-card">
+  <div class="card">
+    <ul class="nav nav-pills mt-3 ml-3" style="border: none">
+      <li class="nav-item">
+        <button mat-raised-button routerLink="/starter/manage-teachers/list">All Teachers</button>
+      </li>
+      <li class="nav-item">
+        <button mat-raised-button routerLink="/starter/manage-teachers/new">New Teacher</button>
+      </li>
+    </ul>
+    <div class="card-body">
+      <h4 class="card-title">Add New Teacher</h4>
+      <div class="12">
+        <div class="row">
+          <div class="ml-3 mb-3">
+            <mat-card class="example-card">
+              <img mat-card-image src="assets/images/user-placeholder.png" width="110px" alt="Photo of a Shiba Inu">
+              <mat-card-actions>
+                <button mat-raised-button class="w-100">Upload</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <mat-form-field color="primary" class="w-100">
+              <mat-label>Enter Teacher Name</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-6">
+            <mat-form-field color="primary" class="w-100">
+              <mat-label>Select teaching subject</mat-label>
+              <mat-select>
+                <mat-option value="Maths">Maths</mat-option>
+                <mat-option value="Science">Science</mat-option>
+                <mat-option value="English">English</mat-option>
+                <mat-option value="Art">Art</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-6">
+            <mat-form-field color="primary" class="w-100">
+              <mat-label>Select teaching Grade</mat-label>
+              <mat-select>
+                <mat-option value="Grade 01">Grade 01</mat-option>
+                <mat-option value="Grade 02">Grade 02</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-6">
+            <mat-form-field color="primary" class="w-100">
+              <mat-label>Choose Education</mat-label>
+              <mat-select>
+                <mat-option value="Diploma">Diploma</mat-option>
+                <mat-option value="Higher National Diploma">Higher National Diploma</mat-option>
+                <mat-option value="Degree">Degree</mat-option>
+                <mat-option value="Masters">Masters</mat-option>
+                <mat-option value="Doctor of Philosophy">Doctor of Philosophy</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-6">
+            <mat-form-field class="w-100" color="primary">
+              <input matInput [matDatepicker]="picker" placeholder="Choose Date of Birth">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-6">
+            <mat-form-field color="primary" class="w-100">
+              <mat-label>Select Gender</mat-label>
+              <mat-select>
+                <mat-option value="Male">Male</mat-option>
+                <mat-option value="Female">Female</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-6">
+            <mat-form-field color="primary" class="w-100">
+              <mat-label>Enter Contact Number</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-6">
+            <mat-form-field color="primary" class="w-100">
+              <mat-label>Enter Email Address</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2">
+            <button mat-raised-button color="primary" class="w-100">Create</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

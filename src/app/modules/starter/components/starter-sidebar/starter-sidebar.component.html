@@ -14,22 +14,29 @@
         <i class="menu-arrow"></i>
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/starter/home">
+    <li class="nav-item" [routerLinkActive]="'active'">
+      <a class="nav-link" routerLink="/starter/manage-grades">
         <i class="material-icons menu-icon">assignment</i>
         <span class="menu-title">Manage Grades</span>
         <i class="menu-arrow"></i>
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/starter/home">
+    <li class="nav-item" [routerLinkActive]="'active'">
+      <a class="nav-link" routerLink="/starter/manage-subjects">
         <i class="material-icons menu-icon">menu_book</i>
         <span class="menu-title">Manage Subjects</span>
         <i class="menu-arrow"></i>
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/starter/home">
+    <li class="nav-item" [routerLinkActive]="'active'">
+      <a class="nav-link" routerLink="/starter/manage-teachers">
+        <i class="material-icons menu-icon">people</i>
+        <span class="menu-title">Manage Teachers</span>
+        <i class="menu-arrow"></i>
+      </a>
+    </li>
+    <li class="nav-item" [routerLinkActive]="'active'">
+      <a class="nav-link" routerLink="/starter/mark-attendance">
         <i class="material-icons menu-icon">check_circle</i>
         <span class="menu-title">Mark Attendance</span>
         <i class="menu-arrow"></i>

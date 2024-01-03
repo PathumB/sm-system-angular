@@ -19,6 +19,18 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatCardModule} from "@angular/material/card";
+import { StarterGradeContextComponent } from './components/starter-grade-context/starter-grade-context.component';
+import { AllGradesDataComponent } from './components/starter-grade-context/items/all-grades-data/all-grades-data.component';
+import { NewGradesDataComponent } from './components/starter-grade-context/items/new-grades-data/new-grades-data.component';
+import { StarterAttendanceContextComponent } from './components/starter-attendance-context/starter-attendance-context.component';
+import { StarterSubjectContextComponent } from './components/starter-subject-context/starter-subject-context.component';
+import { StarterTeacherContextComponent } from './components/starter-teacher-context/starter-teacher-context.component';
+import { AllTeachersDataComponent } from './components/starter-teacher-context/items/all-teachers-data/all-teachers-data.component';
+import { UpdateTeachersDataComponent } from './components/starter-teacher-context/items/update-teachers-data/update-teachers-data.component';
+import { NewTeachersDataComponent } from './components/starter-teacher-context/items/new-teachers-data/new-teachers-data.component';
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 
 
 @NgModule({
@@ -31,7 +43,16 @@ import {MatCardModule} from "@angular/material/card";
     AllStudentsDataComponent,
     NewStudentsDataComponent,
     UpdateStudentsDataComponent,
-    FindStudentsDataComponent
+    FindStudentsDataComponent,
+    StarterGradeContextComponent,
+    AllGradesDataComponent,
+    NewGradesDataComponent,
+    StarterAttendanceContextComponent,
+    StarterSubjectContextComponent,
+    StarterTeacherContextComponent,
+    AllTeachersDataComponent,
+    UpdateTeachersDataComponent,
+    NewTeachersDataComponent
   ],
   imports: [
     CommonModule,
@@ -44,6 +65,9 @@ import {MatCardModule} from "@angular/material/card";
     MatDatepickerModule,
     MatNativeDateModule,
     MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSlideToggleModule,
   ]
 })
 export class StarterModule { }
