@@ -31,6 +31,10 @@ import { NewTeachersDataComponent } from './components/starter-teacher-context/i
 import {MatTableModule} from "@angular/material/table";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {MatExpansionModule} from "@angular/material/expansion";
+import { StarterNoticeContextComponent } from './components/starter-notice-context/starter-notice-context.component';
+import { AddNoticesDataComponent } from './components/starter-notice-context/add-notices-data/add-notices-data.component';
+import { AllNoticesDataComponent } from './components/starter-notice-context/all-notices-data/all-notices-data.component';
 
 
 @NgModule({
@@ -52,7 +56,10 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
     StarterTeacherContextComponent,
     AllTeachersDataComponent,
     UpdateTeachersDataComponent,
-    NewTeachersDataComponent
+    NewTeachersDataComponent,
+    StarterNoticeContextComponent,
+    AddNoticesDataComponent,
+    AllNoticesDataComponent
   ],
   imports: [
     CommonModule,
@@ -68,6 +75,7 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
     MatTableModule,
     MatPaginatorModule,
     MatSlideToggleModule,
+    MatExpansionModule,
   ]
 })
 export class StarterModule { }

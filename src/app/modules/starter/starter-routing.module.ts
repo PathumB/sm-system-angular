@@ -18,6 +18,9 @@ import { UpdateTeachersDataComponent } from "./components/starter-teacher-contex
 import {
   StarterAttendanceContextComponent
 } from "./components/starter-attendance-context/starter-attendance-context.component";
+import {StarterNoticeContextComponent} from "./components/starter-notice-context/starter-notice-context.component";
+import {AllNoticesDataComponent} from "./components/starter-notice-context/all-notices-data/all-notices-data.component";
+import {AddNoticesDataComponent} from "./components/starter-notice-context/add-notices-data/add-notices-data.component";
 
 const routes: Routes = [
   { path: '', component: StarterComponent, children: [
@@ -43,6 +46,11 @@ const routes: Routes = [
           { path: 'update', component: UpdateTeachersDataComponent },
       ]},
       { path: 'mark-attendance', component: StarterAttendanceContextComponent },
+      { path: 'manage-notices', component: StarterNoticeContextComponent, children:[
+          { path: '', redirectTo:'list', pathMatch:'full' },
+          { path: 'list', component: AllNoticesDataComponent },
+          { path: 'new', component: AddNoticesDataComponent },
+        ]},
     ]},
 ];
 
